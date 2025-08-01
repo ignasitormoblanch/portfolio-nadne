@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Co. · Proyectos de Nadine Canet</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- Encabezado de la marca -->
+  <header class="brand-header">
+    <div class="container">
+      <a href="../index.html#marcas" class="btn btn-back">← Volver</a>
+      <h1>Acme Co.</h1>
+      <p class="brand-tagline">Contenido audiovisual para la campaña 2025</p>
+    </div>
+  </header>
+
+  <!-- Galería de vídeos -->
+  <section class="brand-videos">
+    <div class="container videos-grid">
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e"
+                title="Acme Spot 1" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/22439234?h=7f83b7298f"
+                title="Acme Spot 2" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería de imágenes -->
+  <section class="brand-gallery">
+    <div class="container image-grid">
+      <img src="../assets/images/acme-foto1.jpg" alt="Acme Foto 1">
+      <img src="../assets/images/acme-foto2.jpg" alt="Acme Foto 2">
+      <img src="../assets/images/acme-foto3.jpg" alt="Acme Foto 3">
+    </div>
+  </section>
+
+  <!-- Pie simple -->
+  <footer class="brand-footer">
+    <p>&copy; <span id="year"></span> Nadine Canet — Acme Co.</p>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
