@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Descripción SEO -->
+    <meta
+      name="description"
+      content="Portfolio de Nadine Canet, videógrafa y fotógrafa especializada en marketing digital. Descubre su trabajo, proyectos y colaboraciones."
+    />
+    <meta name="author" content="Nadine Canet" />
+    <title>Nadine Canet ‒ Videógrafa y Fotógrafa</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome para iconos sociales -->
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Encabezado con navegación -->
+    <header id="navbar">
+      <div class="nav-brand">
+        <img src="assets/images/logo.png" alt="Logo" />
+        <span>Nadine Canet</span>
+      </div>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#estilo">Estilo</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sección de portada -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hola, soy Nadine Canet</h1>
+        <p>
+          Soy una videógrafa y fotógrafa especializada en marketing digital.
+          Me dedico a crear contenido visual atractivo que conecta marcas con
+          su audiencia.
+        </p>
+        <a href="#galeria" class="btn">Ver mi trabajo</a>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="about">
+      <div class="container about-container">
+        <div class="about-text">
+          <h2>Sobre mí</h2>
+          <p>
+            ¡Hola! Soy Nadine, una apasionada del cine y la fotografía. Tras estudiar
+            comunicación audiovisual descubrí que mi verdadera vocación era contar
+            historias a través de imágenes. Con más de 5 años de experiencia en el
+            sector del marketing digital, he trabajado con marcas y proyectos de todos
+            los tamaños para ayudarles a conectar emocionalmente con su público.
+          </p>
+          <p>
+            En mis proyectos busco reflejar autenticidad y creatividad.
+            Creo que cada marca tiene una historia única que merece ser contada de
+            una manera atractiva y profesional.
+          </p>
+        </div>
+        <div class="about-image"></div>
+      </div>
+    </section>
+
+    <!-- Estilo y valores -->
+    <section id="estilo" class="style-section">
+      <div class="container style-container">
+        <div class="style-image"></div>
+        <div class="style-text">
+          <h2>Estilo y valores</h2>
+          <p>
+            La creatividad, la autenticidad y la atención al detalle son los
+            pilares de mi trabajo. Me inspiro en la narrativa cinematográfica
+            para crear piezas que transmitan emociones y dejen huella.
+          </p>
+          <p>
+            Trabajo mano a mano con mis clientes para entender sus objetivos
+            y valores. Cada proyecto es único y merece una solución visual a
+            medida que potencie su identidad y mensaje.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-subtitle">
+          Explora algunos de mis trabajos por categoría
+        </p>
+        <div class="category-grid">
+          <a href="#galeria-cortos" class="category-card" style="background-image: url('assets/images/hero-bg.png');">
+            <div class="overlay">Cortos</div>
+          </a>
+          <a href="#galeria-marcas" class="category-card" style="background-image: url('assets/images/publicitad-bg.png');">
+            <div class="overlay">Marcas</div>
+          </a>
+        </div>
+
+        <!-- Sección Cortos -->
+        <div id="galeria-cortos" class="category-section">
+          <h3>Cortos</h3>
+          <!-- Vídeos dentro de Cortos -->
+          <div class="videos-grid cortos-videos">
+            <div class="video-wrapper">
+              <iframe
+                src="https://player.vimeo.com/video/76979871?h=8272103f6e"
+                title="Corto 1"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://player.vimeo.com/video/22439234?h=7f83b7298f"
+                title="Corto 2"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-wrapper">
+              <iframe
+                src="https://player.vimeo.com/video/146022717?h=564d5301ce"
+                title="Corto 3"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <!-- Sección Marcas -->
+        <div id="galeria-marcas" class="category-section">
+          <h3>Marcas</h3>
+          <div class="image-grid">
+            <img src="assets/images/publicitad-bg.png" alt="Marca 1" />
+            <img src="assets/images/comida-bg.png" alt="Marca 2" />
+            <img src="assets/images/viajes-bg.png" alt="Marca 3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Clientes -->
+    <section id="clientes" class="clients">
+      <div class="container">
+        <h2 class="section-title">Clientes</h2>
+        <p class="section-subtitle">
+          Algunas marcas y empresas con las que he colaborado
+        </p>
+        <div class="clients-grid">
+          <div class="client-logo"><img src="assets/images/versedialogo.png" alt="Cliente 1" /></div>
+          <div class="client-logo"><img src="assets/images/client2.png" alt="Cliente 2" /></div>
+          <div class="client-logo"><img src="assets/images/client3.png" alt="Cliente 3" /></div>
+          <div class="client-logo"><img src="assets/images/client4.png" alt="Cliente 4" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Testimonios</h2>
+        <p class="section-subtitle">
+          Lo que dicen mis clientes sobre mi trabajo
+        </p>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>
+              “Nadine nos ayudó a crear una campaña de marketing inolvidable que
+              conectó con nuestra audiencia desde el primer momento.”
+            </p>
+            <div class="author">Ignasi Tormo</div>
+            <div class="role">Ceo de VersedIA</div>
+          </div>
+          <div class="testimonial-card">
+            <p>
+              “Su profesionalismo y creatividad superaron nuestras
+              expectativas. Trabajar con ella fue un verdadero placer.”
+            </p>
+            <div class="author">Maria Alegre</div>
+            <div class="role">Estudiante UJI</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+      <div class="container contact-container">
+        <h2>Contacto</h2>
+        <p class="section-subtitle">
+          ¿Quieres trabajar conmigo? Rellena el formulario y me pondré en
+          contacto contigo lo antes posible.
+        </p>
+        <form id="contact-form">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <textarea
+            name="mensaje"
+            placeholder="Mensaje"
+            required
+          ></textarea>
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#estilo">Estilo</a>
+        <a href="#galeria">Galería</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/nacc.fotovideo/" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://vimeo.com/" target="_blank" rel="noopener" aria-label="Vimeo">
+          <i class="fab fa-vimeo"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <p>© <span id="current-year"></span> Nadine Canet. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script para interacción -->
+    <script>
+      // Mostrar año actual en el footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+
+      // Menú responsivo
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
+      // Cerrar menú al hacer clic en un enlace
+      document.querySelectorAll('.nav-menu a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+      // Cambiar estilo del encabezado al hacer scroll
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 60) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+      // Enviar correo desde el formulario de contacto
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const nombre = this.nombre.value;
+        const email = this.email.value;
+        const mensaje = this.mensaje.value;
+        const asunto = encodeURIComponent('Consulta desde portfolio');
+        const cuerpo = encodeURIComponent(
+          'Nombre: ' + nombre + '\nEmail: ' + email + '\n\n' + mensaje
+        );
+        // Sustituye tuemail@example.com por tu dirección real
+        window.location.href = 'mailto:tuemail@example.com?subject=' + asunto + '&body=' + cuerpo;
+      });
+    </script>
+  </body>
+</html>
