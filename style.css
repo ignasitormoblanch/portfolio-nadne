@@ -577,3 +577,58 @@ footer p {
   font-size: 0.9rem;
   color: #bbb;
 }
+
+/* --- Páginas de marcas --------------------------------------- */
+.brand-header {
+  background: #fafafa;
+  padding: 60px 0 30px;
+  text-align: center;
+}
+
+.brand-header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: var(--clr-primary);
+}
+
+.brand-tagline {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Separación de secciones internas */
+.brand-videos,
+.brand-gallery {
+  padding: 40px 0;
+}
+
+.brand-footer {
+  background: #0d0d0d;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+
+/* --- Logos dentro de la sección Marcas (index) ----------------- */
+.brand-logos img {
+  width: 100%;          /* se adapta al ancho del grid */
+  max-height: 120px;    /* controla la altura máxima */
+  object-fit: contain;  /* NO recorta la imagen, la ajusta entera */
+  object-position: center;
+  padding: 10px;        /* un poco de aire alrededor */
+}
+
+/* Opcional: igualar el fondo de cada celda a blanco para logos con transparencia */
+.brand-logos a {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: block;
+}
