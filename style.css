@@ -632,3 +632,91 @@ footer p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   display: block;
 }
+
+
+/* --- Páginas de marca --------------------------------------- */
+.section-title-sm {
+  font-size: 1.6rem;
+  text-align: left;
+  margin-bottom: 25px;
+  color: var(--clr-primary);
+}
+
+.btn-float-back {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #fff;
+  color: var(--clr-primary);
+  padding: 8px 18px;
+  border-radius: 30px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-weight: 600;
+  text-decoration: none;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+.btn-float-back:hover {
+  background: #f2f2f2;
+}
+
+.brand-hero {
+  background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 60%);
+  padding: 80px 0 60px;
+}
+
+.brand-hero-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.brand-logo img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.brand-heading h1 {
+  font-size: 2.4rem;
+  margin-bottom: 8px;
+}
+
+.brand-tagline {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Métricas */
+.brand-metrics {
+  background: #ffffff;
+}
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+}
+.metric-card {
+  background: #fafafa;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+.metric-card h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  color: var(--clr-accent);
+}
+.metric-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Ajustes de la galería específica de marca */
+.brand-gallery-grid img {
+  max-height: 220px;
+  object-fit: cover;
+}
