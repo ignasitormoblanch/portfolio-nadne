@@ -39,7 +39,6 @@
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
           <li><a href="#estilo">Estilo</a></li>
-          <li><a href="#galeria">Galería</a></li>
           <li><a href="#clientes">Clientes</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
@@ -142,8 +141,8 @@
   </div>
 </section>
 
-<!-- Marcas -->
-<section id="marcas" class="category-section">
+<!-- Clientes -->
+<section id="clientes" class="category-section">
   <div class="container">
     <h2 class="section-title">Clientes</h2>
 	<p class="section-subtitle">
@@ -200,35 +199,28 @@
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="contact">
-      <div class="container contact-container">
-        <h2>Contacto</h2>
-        <p class="section-subtitle">
-          ¿Quieres trabajar conmigo? Rellena el formulario y me pondré en
-          contacto contigo lo antes posible.
-        </p>
-        <form id="contact-form">
-          <input
-            type="text"
-            name="nombre"
-            placeholder="Nombre"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Correo electrónico"
-            required
-          />
-          <textarea
-            name="mensaje"
-            placeholder="Mensaje"
-            required
-          ></textarea>
-          <button type="submit">Enviar mensaje</button>
-        </form>
-      </div>
-    </section>
+<section id="contacto" class="contact">
+  <div class="container contact-container">
+    <h2>Contacto</h2>
+    <p class="section-subtitle">
+      ¿Quieres trabajar conmigo? Rellena el formulario y me pondré en contacto contigo lo antes posible.
+    </p>
+
+    <form id="contact-form"
+          action="https://formspree.io/f/xkgzvopa"
+          method="POST">
+      
+      <input type="text"  name="nombre" placeholder="Nombre" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+
+      <!-- Redirección personalizada (opcional) -->
+      <!-- <input type="hidden" name="_redirect" value="https://tusitio.com/gracias.html"> -->
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
 
     <!-- Pie de página -->
     <footer>
@@ -236,7 +228,6 @@
         <a href="#home">Home</a>
         <a href="#sobre-mi">Sobre mí</a>
         <a href="#estilo">Estilo</a>
-        <a href="#galeria">Galería</a>
         <a href="#clientes">Clientes</a>
         <a href="#contacto">Contacto</a>
       </div>
@@ -254,45 +245,36 @@
       <p>© <span id="current-year"></span> Nadine Canet. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Script para interacción -->
-    <script>
-      // Mostrar año actual en el footer
-      document.getElementById('current-year').textContent = new Date().getFullYear();
+   
 
-      // Menú responsivo
-      const hamburger = document.getElementById('hamburger');
-      const navMenu = document.querySelector('.nav-menu');
-      hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-      });
-      // Cerrar menú al hacer clic en un enlace
-      document.querySelectorAll('.nav-menu a').forEach((link) => {
-        link.addEventListener('click', () => {
-          navMenu.classList.remove('open');
-        });
-      });
-      // Cambiar estilo del encabezado al hacer scroll
-      window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
-        if (window.scrollY > 60) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-      });
-      // Enviar correo desde el formulario de contacto
-      document.getElementById('contact-form').addEventListener('submit', function (e) {
-        e.preventDefault();
-        const nombre = this.nombre.value;
-        const email = this.email.value;
-        const mensaje = this.mensaje.value;
-        const asunto = encodeURIComponent('Consulta desde portfolio');
-        const cuerpo = encodeURIComponent(
-          'Nombre: ' + nombre + '\nEmail: ' + email + '\n\n' + mensaje
-        );
-        // Sustituye tuemail@example.com por tu dirección real
-        window.location.href = 'mailto:tuemail@example.com?subject=' + asunto + '&body=' + cuerpo;
-      });
-    </script>
+<!-- Script para interacción -->
+<script>
+  // Mostrar año actual en el footer
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+
+  // Menú responsivo
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.querySelector('.nav-menu');
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+
+  // Cerrar menú al hacer clic en un enlace
+  document.querySelectorAll('.nav-menu a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+    });
+  });
+
+  // Cambiar estilo del encabezado al hacer scroll
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 60) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
   </body>
 </html>
