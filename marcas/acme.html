@@ -3,53 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acme Co. · Proyectos de Nadine Canet</title>
+  <title>VersedIA · Proyectos de Nadine Canet</title>
+
+  <!-- Hoja de estilo global -->
   <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-  <!-- Encabezado de la marca -->
-  <header class="brand-header">
-    <div class="container">
-      <a href="../index.html#marcas" class="btn btn-back">← Volver</a>
-      <h1>Acme Co.</h1>
-      <p class="brand-tagline">Contenido audiovisual para la campaña 2025</p>
-    </div>
-  </header>
 
-  <!-- Galería de vídeos -->
+  <!-- Botón flotante de regreso -->
+  <a href="../index.html#marcas" class="btn-float-back" aria-label="Volver">
+    ← Volver
+  </a>
+
+  <!-- HERO de marca -->
+  <section class="brand-hero">
+    <div class="container brand-hero-box">
+      <!-- Logo de VersedIA -->
+      <div class="brand-logo">
+        <img src="../assets/images/versedialogo.png" alt="Logo VersedIA" />
+      </div>
+
+      <div class="brand-heading">
+        <h1>VersedIA</h1>
+        <p class="brand-tagline">
+          Contenido audiovisual y motion graphics para la plataforma IA&nbsp;2024-25
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Métricas / Resultados -->
+  <section class="brand-metrics">
+    <div class="container metrics-grid">
+      <div class="metric-card">
+        <h3>+10K</h3>
+        <p>Reproducciones totales</p>
+      </div>
+      <div class="metric-card">
+        <h3>+200</h3>
+        <p>Interacciones en redes</p>
+      </div>
+      <div class="metric-card">
+        <h3>94 %</h3>
+        <p>Incremento de recuerdo de marca</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vídeos -->
   <section class="brand-videos">
-    <div class="container videos-grid">
-      <div class="video-wrapper">
-        <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e"
-                title="Acme Spot 1" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-        </iframe>
-      </div>
-      <div class="video-wrapper">
-        <iframe src="https://player.vimeo.com/video/22439234?h=7f83b7298f"
-                title="Acme Spot 2" frameborder="0"
-                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-        </iframe>
+    <div class="container">
+      <h2 class="section-title-sm">Vídeos principales</h2>
+      <div class="videos-grid">
+        <div class="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/76979871?h=8272103f6e"
+            title="VersedIA – Spot 1"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/22439234?h=7f83b7298f"
+            title="VersedIA – Spot 2"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+
+        <div class="video-wrapper">
+          <iframe
+            src="https://player.vimeo.com/video/146022717?h=564d5301ce"
+            title="VersedIA – Spot 3"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Galería de imágenes -->
+  <!-- Galería de fotos -->
   <section class="brand-gallery">
-    <div class="container image-grid">
-      <img src="../assets/images/acme-foto1.jpg" alt="Acme Foto 1">
-      <img src="../assets/images/acme-foto2.jpg" alt="Acme Foto 2">
-      <img src="../assets/images/acme-foto3.jpg" alt="Acme Foto 3">
+    <div class="container">
+      <h2 class="section-title-sm">Fotogramas &amp; making of</h2>
+      <div class="image-grid brand-gallery-grid">
+        <img src="../assets/images/versed-foto1.jpg" alt="VersedIA Foto 1">
+        <img src="../assets/images/versed-foto2.jpg" alt="VersedIA Foto 2">
+        <img src="../assets/images/versed-foto3.jpg" alt="VersedIA Foto 3">
+        <img src="../assets/images/versed-foto4.jpg" alt="VersedIA Foto 4">
+      </div>
     </div>
   </section>
 
-  <!-- Pie simple -->
+  <!-- Pie de página -->
   <footer class="brand-footer">
-    <p>&copy; <span id="year"></span> Nadine Canet — Acme Co.</p>
+    <p>&copy; <span id="year"></span> Nadine Canet · VersedIA</p>
   </footer>
 
   <script>
-    // Año dinámico
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
