@@ -36,10 +36,13 @@
       </div>
       <nav>
         <ul class="nav-menu">
-          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#home" class="active">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
           <li><a href="#estilo">Estilo</a></li>
+          <li><a href="#galeria">Galería</a></li>
           <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -60,6 +63,60 @@
           su audiencia.
         </p>
         <a href="#galeria" class="btn">Ver mi trabajo</a>
+      </div>
+    </section>
+
+    <!-- Servicios principales -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2 class="section-title">Servicios a medida para marcas valientes</h2>
+        <p class="section-subtitle">
+          Acompaño a tu equipo en todo el proceso creativo: desde la idea y la planificación hasta la entrega final lista para publicar en cualquier plataforma.
+        </p>
+        <div class="services-grid">
+          <article class="service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Preproducción estratégica</h3>
+            <p>
+              Analizo tu marca, tu audiencia y tus objetivos para diseñar piezas audiovisuales que transmitan el mensaje con claridad.
+            </p>
+            <ul class="service-list">
+              <li>Definición de narrativa y tono visual</li>
+              <li>Guiones técnicos y storyboard</li>
+              <li>Planificación de rodajes y recursos</li>
+            </ul>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Producción y rodaje</h3>
+            <p>
+              Equipo ligero, versátil y profesional para capturar imágenes con calidad cinematográfica en cualquier localización.
+            </p>
+            <ul class="service-list">
+              <li>Dirección y realización</li>
+              <li>Iluminación y fotografía</li>
+              <li>Audio profesional en set</li>
+            </ul>
+          </article>
+          <article class="service-card" data-animate>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3>Postproducción completa</h3>
+            <p>
+              Edición, color y motion graphics para entregar piezas optimizadas para redes, campañas digitales o eventos en directo.
+            </p>
+            <ul class="service-list">
+              <li>Edición y montaje narrativo</li>
+              <li>Corrección de color cinematográfica</li>
+              <li>Versionado para múltiples formatos</li>
+            </ul>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -105,10 +162,86 @@
       </div>
     </section>
 
+    <!-- Métricas destacadas -->
+    <section class="stats" aria-labelledby="stats-heading">
+      <div class="container stats-container">
+        <h2 id="stats-heading" class="section-title">Impacto medible</h2>
+        <p class="section-subtitle">
+          Las cifras reflejan la confianza de quienes apuestan por historias que emocionan y venden.
+        </p>
+        <div class="stats-grid">
+          <article class="stat-card" data-animate>
+            <span class="stat-number">120+</span>
+            <span class="stat-label">Piezas audiovisuales entregadas</span>
+          </article>
+          <article class="stat-card" data-animate>
+            <span class="stat-number">35</span>
+            <span class="stat-label">Marcas que han confiado en mi trabajo</span>
+          </article>
+          <article class="stat-card" data-animate>
+            <span class="stat-number">8</span>
+            <span class="stat-label">Premios y selecciones en festivales</span>
+          </article>
+          <article class="stat-card" data-animate>
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Clientes que repiten colaboración</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería principal -->
+    <section id="galeria" class="gallery">
+      <div class="container">
+        <h2 class="section-title">Galería destacada</h2>
+        <p class="section-subtitle">
+          Explora piezas seleccionadas de mi trabajo reciente. Cada categoría muestra un enfoque distinto para conectar con tu audiencia.
+        </p>
+        <div class="category-grid">
+          <a
+            href="#cortos"
+            class="category-card"
+            style="background-image: url('assets/images/moda-bg.png');"
+            data-animate
+          >
+            <div class="overlay">
+              <span>Cortometrajes</span>
+              <small>Historias que atrapan desde el primer fotograma</small>
+            </div>
+          </a>
+          <a
+            href="#marcas"
+            class="category-card"
+            style="background-image: url('assets/images/publicitad-bg.png');"
+            data-animate
+          >
+            <div class="overlay">
+              <span>Campañas de marca</span>
+              <small>Contenido comercial con un sello muy humano</small>
+            </div>
+          </a>
+          <a
+            href="#proceso"
+            class="category-card"
+            style="background-image: url('assets/images/hero-bg.png');"
+            data-animate
+          >
+            <div class="overlay">
+              <span>Making of</span>
+              <small>Así damos vida a cada concepto</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Cortos -->
 <section id="cortos" class="category-section">
   <div class="container">
     <h2 class="section-title">Cortos</h2>
+    <p class="section-subtitle">
+      Narrativas breves que combinan sensibilidad documental y estética publicitaria para transmitir el alma de cada proyecto.
+    </p>
     <div class="videos-grid cortos-videos">
       <div class="video-wrapper">
         <iframe
@@ -141,33 +274,126 @@
   </div>
 </section>
 
-<!-- Clientes -->
-<section id="clientes" class="category-section">
-  <div class="container">
-    <h2 class="section-title">Clientes</h2>
-	<p class="section-subtitle">
+    <!-- Campañas de marca -->
+    <section id="marcas" class="category-section brand-showcase">
+      <div class="container">
+        <h2 class="section-title">Campañas para marcas con propósito</h2>
+        <p class="section-subtitle">
+          Piezas fotográficas y audiovisuales creadas para potenciar el storytelling de empresas innovadoras.
+        </p>
+        <div class="image-grid brand-gallery" role="list">
+          <figure class="brand-piece" data-animate role="listitem">
+            <img src="assets/images/publicitad-bg.png" alt="Campaña de lanzamiento VersedIA" />
+            <figcaption>
+              Lanzamiento de VersedIA · Vídeo manifesto y piezas para redes sociales
+            </figcaption>
+          </figure>
+          <figure class="brand-piece" data-animate role="listitem">
+            <img src="assets/images/comida-bg.png" alt="Campaña gastronómica Boreal" />
+            <figcaption>
+              Boreal Café · Serie de microcontenidos gastronómicos para Instagram Reels
+            </figcaption>
+          </figure>
+          <figure class="brand-piece" data-animate role="listitem">
+            <img src="assets/images/viajes-bg.png" alt="Campaña de viajes" />
+            <figcaption>
+              Turisme Mediterrani · Documental corporativo y banco de imágenes promocional
+            </figcaption>
+          </figure>
+          <figure class="brand-piece" data-animate role="listitem">
+            <img src="assets/images/moda-bg.png" alt="Producción de moda" />
+            <figcaption>
+              Capsule Collection · Fashion film y fotografías editoriales para e-commerce
+            </figcaption>
+          </figure>
+          <figure class="brand-piece" data-animate role="listitem">
+            <img src="assets/images/pastel-bg.png" alt="Campaña de estilo de vida" />
+            <figcaption>
+              Vida Pastel · Contenido lifestyle con enfoque en branding emocional
+            </figcaption>
+          </figure>
+          <figure class="brand-piece" data-animate role="listitem">
+            <img src="assets/images/brand4.png" alt="Campaña tecnológica" />
+            <figcaption>
+              Loop Tech · Serie de piezas para lanzamiento de aplicación móvil
+            </figcaption>
+          </figure>
+        </div>
+        <a href="marcas/versedia.html" class="btn btn-secondary">Ver caso de estudio completo</a>
+      </div>
+    </section>
+
+    <!-- Proceso de trabajo -->
+    <section id="proceso" class="process">
+      <div class="container">
+        <h2 class="section-title">Un proceso colaborativo y transparente</h2>
+        <p class="section-subtitle">
+          Integro a tu equipo en cada fase para que la pieza final cumpla objetivos comerciales sin perder alma.
+        </p>
+        <div class="process-steps">
+          <article class="process-step" data-animate>
+            <div class="step-number">01</div>
+            <h3>Inmersión en la marca</h3>
+            <p>
+              Sesiones de briefing y moodboard para comprender tu identidad, valores y estilo visual deseado.
+            </p>
+          </article>
+          <article class="process-step" data-animate>
+            <div class="step-number">02</div>
+            <h3>Concepto creativo</h3>
+            <p>
+              Desarrollo de propuestas con referencias visuales, guiones y planificación logística detallada.
+            </p>
+          </article>
+          <article class="process-step" data-animate>
+            <div class="step-number">03</div>
+            <h3>Producción ágil</h3>
+            <p>
+              Rodajes eficientes, coordinación de equipo y dirección artística pensada para múltiples formatos.
+            </p>
+          </article>
+          <article class="process-step" data-animate>
+            <div class="step-number">04</div>
+            <h3>Entrega optimizada</h3>
+            <p>
+              Montaje final, revisión conjunta y versiones adaptadas a cada canal con métricas de rendimiento.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clientes -->
+    <section id="clientes" class="category-section">
+      <div class="container">
+        <h2 class="section-title">Clientes</h2>
+        <p class="section-subtitle">
           Algunas marcas y empresas con las que he colaborado
         </p>
-
-
- <div class="image-grid brand-logos">
-      <!-- Marca 1 -->
-      <a href="marcas/versedia.html" class="brand-link">
-        <img src="assets/images/versedialogo.png" alt="VersedIA SL" />
-      </a>
-
-      <!-- Marca 2 -->
-      <a href="marcas/boreal.html" class="brand-link">
-        <img src="assets/images/client2.png" alt="Rototom" />
-      </a>
-
-      <!-- Marca 3 -->
-      <a href="marcas/lumina.html" class="brand-link">
-        <img src="assets/images/client3.png" alt="Universitat Jaume I" />
-      </a>
-    </div>
-  </div>
-</section>
+        <div class="clients-wrapper">
+          <div class="clients-grid brand-logos">
+            <div class="client-logo" data-animate>
+              <img src="assets/images/versedialogo.png" alt="VersedIA, consultora tecnológica" />
+            </div>
+            <div class="client-logo" data-animate>
+              <img src="assets/images/client2.png" alt="Rototom Sunsplash" />
+            </div>
+            <div class="client-logo" data-animate>
+              <img src="assets/images/client3.png" alt="Universitat Jaume I" />
+            </div>
+            <div class="client-logo" data-animate>
+              <img src="assets/images/client4.png" alt="Festival Boreal" />
+            </div>
+          </div>
+          <div class="clients-text" data-animate>
+            <p>
+              También colaboro con agencias creativas y startups en fase de crecimiento para producir contenido de alto impacto en plazos ajustados.
+            </p>
+            <a href="#contacto" class="btn">Planificar un proyecto</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- Testimonios -->
@@ -178,7 +404,7 @@
           Lo que dicen mis clientes sobre mi trabajo
         </p>
         <div class="testimonial-grid">
-          <div class="testimonial-card">
+          <div class="testimonial-card" data-animate>
             <p>
               “Nadine nos ayudó a crear una campaña de marketing inolvidable que
               conectó con nuestra audiencia desde el primer momento.”
@@ -186,7 +412,7 @@
             <div class="author">Ignasi Tormo</div>
             <div class="role">Ceo de VersedIA</div>
           </div>
-          <div class="testimonial-card">
+          <div class="testimonial-card" data-animate>
             <p>
               “Su profesionalismo y creatividad superaron nuestras
               expectativas. Trabajar con ella fue un verdadero placer.”
@@ -194,41 +420,162 @@
             <div class="author">Maria Alegre</div>
             <div class="role">Estudiante UJI</div>
           </div>
+          <div class="testimonial-card" data-animate>
+            <p>
+              “La producción fue ágil y muy cuidada. Recibimos diferentes versiones optimizadas para redes y eventos sin perder calidad.”
+            </p>
+            <div class="author">Laura Ortiz</div>
+            <div class="role">Directora de marketing, Loop Tech</div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Preguntas frecuentes -->
+    <section id="faq" class="faq">
+      <div class="container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <p class="section-subtitle">
+          Resolvemos las dudas más habituales antes de comenzar a trabajar juntas.
+        </p>
+        <div class="faq-items">
+          <article class="faq-item" data-animate>
+            <button class="faq-question" aria-expanded="false">
+              ¿Cuánto dura un proyecto estándar?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Depende de la complejidad, pero un proyecto completo (preproducción, rodaje y entrega de versiones) suele requerir entre 3 y 6 semanas. Siempre presento un calendario detallado antes de comenzar.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item" data-animate>
+            <button class="faq-question" aria-expanded="false">
+              ¿Puedes trabajar con equipos internos de marketing?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Sí. Me integro fácilmente con equipos internos o agencias externas. Definimos juntas roles, herramientas y canales de comunicación para mantener un flujo de trabajo ágil.
+              </p>
+            </div>
+          </article>
+          <article class="faq-item" data-animate>
+            <button class="faq-question" aria-expanded="false">
+              ¿Entregas piezas adaptadas a diferentes formatos?
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>
+                Entrego versiones optimizadas para redes sociales, anuncios verticales, web y pantallas de gran formato. También incluyo guías de uso para tu equipo.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Llamada a la acción -->
+    <section class="cta" aria-labelledby="cta-heading">
+      <div class="container cta-container">
+        <div class="cta-text" data-animate>
+          <h2 id="cta-heading">¿Listas para crear la próxima campaña?</h2>
+          <p>
+            Cuéntame qué quieres conseguir y prepararé una propuesta pensada para tu presupuesto, tus canales y tu calendario.
+          </p>
+        </div>
+        <a href="#contacto" class="btn btn-light" data-animate>Agendar una reunión</a>
+      </div>
+    </section>
+
     <!-- Contacto -->
-<section id="contacto" class="contact">
-  <div class="container contact-container">
-    <h2>Contacto</h2>
-    <p class="section-subtitle">
-      ¿Quieres trabajar conmigo? Rellena el formulario y me pondré en contacto contigo lo antes posible.
-    </p>
-
-    <form id="contact-form"
-          action="https://formspree.io/f/xkgzvopa"
-          method="POST">
-      
-      <input type="text"  name="nombre" placeholder="Nombre" required />
-      <input type="email" name="email" placeholder="Correo electrónico" required />
-      <textarea name="mensaje" placeholder="Mensaje" required></textarea>
-
-      <!-- Redirección personalizada (opcional) -->
-      <!-- <input type="hidden" name="_redirect" value="https://tusitio.com/gracias.html"> -->
-
-      <button type="submit">Enviar mensaje</button>
-    </form>
-  </div>
-</section>
+    <section id="contacto" class="contact">
+      <div class="container contact-container">
+        <h2>Contacto</h2>
+        <p class="section-subtitle">
+          ¿Quieres trabajar conmigo? Completa el formulario o escríbeme directamente y agendaremos una llamada en menos de 48&nbsp;horas.
+        </p>
+        <div class="contact-wrapper">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xkgzvopa"
+            method="POST"
+          >
+            <div class="form-field">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required />
+            </div>
+            <div class="form-field">
+              <label for="servicio">Tipo de proyecto</label>
+              <select id="servicio" name="servicio" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="campana">Campaña integral</option>
+                <option value="pieza-social">Piezas para redes sociales</option>
+                <option value="evento">Cobertura de evento</option>
+                <option value="consultoria">Consultoría / asesoría</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntame los objetivos, fechas y presupuesto aproximado" required></textarea>
+            </div>
+            <div class="form-field">
+              <label class="checkbox-label">
+                <input type="checkbox" name="newsletter" value="interes" />
+                Quiero recibir recursos y guías gratuitas de producción audiovisual.
+              </label>
+            </div>
+            <button type="submit">Enviar mensaje</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <div class="contact-info" data-animate>
+            <div class="info-card">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Escríbeme</h3>
+                <a href="mailto:hola@nadinecanet.com">hola@nadinecanet.com</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h3>Llámame</h3>
+                <a href="tel:+34600300300">+34&nbsp;600&nbsp;300&nbsp;300</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Ubicación</h3>
+                <p>Barcelona · Valencia · Disponible para proyectos internacionales</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h3>Horario</h3>
+                <p>Lunes a viernes · 9:00 - 18:00 CET</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Pie de página -->
     <footer>
       <div class="footer-links">
-        <a href="#home">Home</a>
+        <a href="#home">Inicio</a>
         <a href="#sobre-mi">Sobre mí</a>
-        <a href="#estilo">Estilo</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
         <a href="#clientes">Clientes</a>
+        <a href="#testimonios">Testimonios</a>
         <a href="#contacto">Contacto</a>
       </div>
       <div class="social-icons">
@@ -245,36 +592,152 @@
       <p>© <span id="current-year"></span> Nadine Canet. Todos los derechos reservados.</p>
     </footer>
 
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
    
 
-<!-- Script para interacción -->
-<script>
-  // Mostrar año actual en el footer
-  document.getElementById('current-year').textContent = new Date().getFullYear();
+    <!-- Script para interacción -->
+    <script>
+      // Mostrar año actual en el footer
+      document.getElementById('current-year').textContent = new Date().getFullYear();
 
-  // Menú responsivo
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.querySelector('.nav-menu');
-  hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-  });
+      // Menú responsivo
+      const hamburger = document.getElementById('hamburger');
+      const navMenu = document.querySelector('.nav-menu');
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+      });
 
-  // Cerrar menú al hacer clic en un enlace
-  document.querySelectorAll('.nav-menu a').forEach((link) => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('open');
-    });
-  });
+      // Cerrar menú al hacer clic en un enlace
+      document.querySelectorAll('.nav-menu a').forEach((link) => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
 
-  // Cambiar estilo del encabezado al hacer scroll
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
-    if (window.scrollY > 60) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-</script>
+      // Destacar elemento del menú según el scroll
+      const navLinks = Array.from(document.querySelectorAll('.nav-menu a'));
+      const sectionTargets = navLinks
+        .map((link) => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+      const updateActiveLink = () => {
+        const scrollPosition = window.scrollY + 120;
+        navLinks.forEach((link) => link.classList.remove('active'));
+
+        sectionTargets.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionBottom = sectionTop + section.offsetHeight;
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+            const activeLink = navLinks.find(
+              (link) => link.getAttribute('href') === `#${section.id}`
+            );
+            if (activeLink) {
+              activeLink.classList.add('active');
+            }
+          }
+        });
+      };
+
+      window.addEventListener('scroll', updateActiveLink);
+      window.addEventListener('load', updateActiveLink);
+
+      // Cambiar estilo del encabezado al hacer scroll
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 60) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Animaciones al hacer scroll
+      const animatedElements = document.querySelectorAll('[data-animate]');
+      let observer;
+
+      const revealElement = (entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      };
+
+      if ('IntersectionObserver' in window) {
+        observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach(revealElement);
+          },
+          { threshold: 0.15 }
+        );
+
+        animatedElements.forEach((element) => {
+          observer.observe(element);
+        });
+      } else {
+        animatedElements.forEach((element) => {
+          element.classList.add('is-visible');
+        });
+      }
+
+      // Preguntas frecuentes
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach((item) => {
+        const button = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+
+        button.addEventListener('click', () => {
+          const isExpanded = button.getAttribute('aria-expanded') === 'true';
+          button.setAttribute('aria-expanded', String(!isExpanded));
+          answer.hidden = isExpanded;
+          item.classList.toggle('open', !isExpanded);
+        });
+      });
+
+      // Botón volver arriba
+      const backToTop = document.getElementById('back-to-top');
+      window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('visible', window.scrollY > 400);
+      });
+
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Manejo del formulario con Formspree
+      const contactForm = document.getElementById('contact-form');
+      const formStatus = document.getElementById('form-status');
+      const submitButton = contactForm.querySelector('button[type="submit"]');
+
+      contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        formStatus.textContent = 'Enviando mensaje...';
+        submitButton.disabled = true;
+
+        try {
+          const formData = new FormData(contactForm);
+          const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: formData,
+            headers: {
+              Accept: 'application/json',
+            },
+          });
+
+          if (response.ok) {
+            formStatus.textContent = '¡Gracias! Me pondré en contacto contigo muy pronto.';
+            contactForm.reset();
+          } else {
+            formStatus.textContent = 'Ha ocurrido un error. Por favor, vuelve a intentarlo o escríbeme directamente.';
+          }
+        } catch (error) {
+          formStatus.textContent = 'No se ha podido enviar el formulario. Comprueba tu conexión e inténtalo de nuevo.';
+        }
+
+        submitButton.disabled = false;
+      });
+    </script>
   </body>
 </html>
